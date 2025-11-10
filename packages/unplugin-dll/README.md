@@ -1,8 +1,8 @@
 <div align="center">
 
-<h1>dll</h1>
+<h1>unplugin-dll</h1>
 
-**DESC**
+**Functional doubly-linked lists.**
 
 [Documentation](https://MichaelOstermann.github.io/dll)
 
