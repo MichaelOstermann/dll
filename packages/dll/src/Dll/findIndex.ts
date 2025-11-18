@@ -1,4 +1,4 @@
-import type { Dll, DllLink } from "./types"
+import type { Dll, DllLink } from "."
 
 /**
  * Returns the index of the first element matching the predicate.

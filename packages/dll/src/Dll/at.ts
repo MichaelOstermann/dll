@@ -1,4 +1,4 @@
-import type { Dll, DllLink } from "./types"
+import type { Dll, DllLink } from "."
 
 /**
  * Retrieves the link node at a specific index, supporting negative indices and optimized traversal from the nearest end.

@@ -1,4 +1,4 @@
-import type { Dll, DllLink } from "./types"
+import type { Dll, DllLink } from "."
 
 /**
  * Checks if no elements match the predicate; supports type guards.

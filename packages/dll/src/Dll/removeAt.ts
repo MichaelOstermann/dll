@@ -1,4 +1,4 @@
-import type { Dll } from "./types"
+import type { Dll } from "."
 import { at } from "./at"
 import { unlink } from "./unlink"
 

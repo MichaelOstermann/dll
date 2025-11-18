@@ -1,4 +1,4 @@
-import type { Dll } from "./types"
+import type { Dll } from "."
 
 /**
  * Removes and returns the first element of the doubly-linked list.

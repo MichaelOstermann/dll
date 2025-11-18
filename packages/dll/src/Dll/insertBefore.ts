@@ -1,4 +1,4 @@
-import type { Dll, DllLink } from "./types"
+import type { Dll, DllLink } from "."
 
 /**
  * Inserts a value immediately before a given link node.

@@ -1,4 +1,4 @@
-import type { Dll, DllLink } from "./types"
+import type { Dll, DllLink } from "."
 
 /**
  * Adds a value to the end of the doubly-linked list. Returns the link node, which can be used with `unlink` for later removal.

@@ -1,4 +1,4 @@
-import type { Dll } from "./types"
+import type { Dll } from "."
 
 /**
  * Returns the index of the first occurrence of a value using strict equality (===).

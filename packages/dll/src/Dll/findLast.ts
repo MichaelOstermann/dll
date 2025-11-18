@@ -1,4 +1,4 @@
-import type { Dll, DllLink } from "./types"
+import type { Dll, DllLink } from "."
 
 /**
  * Returns the link node of the last element that matches the predicate function. Can be used with `unlink` for removal.

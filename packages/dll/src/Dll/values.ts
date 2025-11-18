@@ -1,4 +1,4 @@
-import type { Dll } from "./types"
+import type { Dll } from "."
 
 /**
  * Returns an iterable iterator over the values in the list.

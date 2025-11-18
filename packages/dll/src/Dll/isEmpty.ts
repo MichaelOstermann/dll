@@ -1,4 +1,4 @@
-import type { Dll } from "./types"
+import type { Dll } from "."
 
 /**
  * Checks if the doubly-linked list is empty.

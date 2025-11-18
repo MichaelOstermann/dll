@@ -1,4 +1,4 @@
-import type { Dll } from "./types"
+import type { Dll } from "."
 import { append } from "./append"
 
 /**

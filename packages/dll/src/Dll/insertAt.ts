@@ -1,4 +1,4 @@
-import type { Dll, DllLink } from "./types"
+import type { Dll, DllLink } from "."
 import { append } from "./append"
 import { at } from "./at"
 import { insertBefore } from "./insertBefore"

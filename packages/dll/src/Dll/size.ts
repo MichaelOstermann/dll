@@ -1,4 +1,4 @@
-import type { Dll } from "./types"
+import type { Dll } from "."
 
 /**
  * Returns the number of elements in the doubly-linked list.
