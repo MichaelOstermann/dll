@@ -21,7 +21,7 @@
     },
     "packages/dll": {
       "name": "@monstermann/dll",
-      "version": "0.0.0",
+      "version": "0.0.1",
     },
     "packages/unplugin-dll": {
       "name": "@monstermann/unplugin-dll",
