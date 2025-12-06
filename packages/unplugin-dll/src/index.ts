@@ -25,7 +25,7 @@ export default createUnplugin<Options>(({ debug, enforce, exclude, include } = {
                     debug: shouldDebug(id),
                     resolve({ importAlias, importName, importPath, propertyName }) {
                         if (importPath === "@monstermann/dll" && importName === "Dll")
-                            return `import { ${propertyName} as ${importAlias} } from "@monstermann/dll/Dll/${propertyName}.js"`
+                            return `import { ${propertyName} as ${importAlias} } from "@monstermann/dll/Dll/${propertyName}.mjs"`
                         return undefined
                     },
                 })
