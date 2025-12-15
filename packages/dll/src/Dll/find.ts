@@ -12,12 +12,12 @@ import type { Dll, DllLink } from "."
  */
 export function find<T, U extends T>(
     dll: Dll<T>,
-    predicate: (value: NoInfer<T>, link: DllLink<NoInfer<T>>, dll: Dll<NoInfer<T>>) => value is U
+    predicate: (value: NoInfer<T>, link: DllLink<NoInfer<T>>, dll: Dll<NoInfer<T>>) => value is U,
 ): DllLink<U> | undefined
 
 export function find<T>(
     dll: Dll<T>,
-    predicate: (value: NoInfer<T>, link: DllLink<NoInfer<T>>, dll: Dll<NoInfer<T>>) => boolean
+    predicate: (value: NoInfer<T>, link: DllLink<NoInfer<T>>, dll: Dll<NoInfer<T>>) => boolean,
 ): DllLink<T> | undefined
 
 export function find<T>(
