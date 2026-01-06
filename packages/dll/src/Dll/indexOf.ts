@@ -1,14 +1,24 @@
 import type { Dll } from "."
 
 /**
+ * # indexOf
+ *
+ * ```ts
+ * function Dll.indexOf(dll: Dll<T>, value: T): number
+ * ```
+ *
  * Returns the index of the first occurrence of a value using strict equality (===).
  *
- * @example
+ * ## Example
+ *
  * ```ts
+ * import { Dll } from "@monstermann/dll";
+ *
  * const dll = Dll.create<number>([1, 2, 3, 2, 4]);
  * console.log(Dll.indexOf(dll, 2)); // 1
  * console.log(Dll.indexOf(dll, 10)); // -1
  * ```
+ *
  */
 export function indexOf<T>(dll: Dll<T>, value: NoInfer<T>): number {
     let idx = 0

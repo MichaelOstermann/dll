@@ -1,15 +1,26 @@
 import type { Dll, DllLink } from "."
 
 /**
+ * # entries
+ *
+ * ```ts
+ * function Dll.entries(dll: Dll<T>): IterableIterator<DllLink<T>>
+ * ```
+ *
  * Returns an iterable iterator over the link nodes in the list.
  *
- * @example
+ * ## Example
+ *
  * ```ts
+ * import { Dll } from "@monstermann/dll";
+ *
  * const dll = Dll.create<number>([1, 2, 3]);
+ *
  * for (const link of Dll.entries(dll)) {
- *     console.log(link.value);
+ *     console.log(link.value); // 1, 2, 3
  * }
  * ```
+ *
  */
 export function entries<T>(dll: Dll<T>): IterableIterator<DllLink<T>> {
     let pivot = dll.head

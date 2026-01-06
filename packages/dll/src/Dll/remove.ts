@@ -2,13 +2,24 @@ import type { Dll } from "."
 import { unlink } from "./unlink"
 
 /**
+ * # remove
+ *
+ * ```ts
+ * function Dll.remove(dll: Dll<T>, value: T): void
+ * ```
+ *
  * Removes the first element in the list that matches the given value using strict equality (===).
  *
- * @example
+ * ## Example
+ *
  * ```ts
+ * import { Dll } from "@monstermann/dll";
+ *
  * const dll = Dll.create<number>([1, 2, 3, 2, 4]);
  * Dll.remove(dll, 2);
+ * // List is now: [1, 3, 2, 4] (only first match removed)
  * ```
+ *
  */
 export function remove<T>(dll: Dll<T>, value: NoInfer<T>): void {
     let pivot = dll.head

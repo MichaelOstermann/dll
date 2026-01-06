@@ -1,14 +1,26 @@
 import type { Dll, DllLink } from "."
 
 /**
+ * # unlink
+ *
+ * ```ts
+ * function Dll.unlink(link: DllLink<T>): void
+ * ```
+ *
  * Removes a specific link node from its doubly-linked list and clears its references.
  *
- * @example
+ * ## Example
+ *
  * ```ts
+ * import { Dll } from "@monstermann/dll";
+ *
  * const dll = Dll.create<number>([1, 2, 3]);
  * const secondLink = Dll.at(dll, 1)!;
+ *
  * Dll.unlink(secondLink);
+ * // List is now: [1, 3]
  * ```
+ *
  */
 export function unlink<T>(dll: Dll<T>, link: DllLink<T>): void {
     if (link.prev) link.prev.next = link.next
